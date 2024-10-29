@@ -1,0 +1,6 @@
+Version 0.1 - Lost in Rixdorf ( A Unity Rougelike Tutorial Hack )
+https://assetstore.unity.com/packages/templates/tutorials/2d-roguelike-29825
+
+Added - Level Paramters System as Scriptable Objects
+Changed - exchanged Spritesheet with Pictures of my dog and other stuff from the neighbourhood
+Known Issues - Sometimes the Enemy ( Scooter ) moves at the same spot as the Player trapping the Player with this action
