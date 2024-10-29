@@ -38,7 +38,7 @@ namespace Completed
 			food = GameManager.instance.playerFoodPoints;
 			
 			//Set the foodText to reflect the current player food total.
-			foodText.text = "Food: " + food;
+			foodText.text = "Mister Spock's Energy: " + food;
 			
 			//Call the Start function of the MovingObject base class.
 			base.Start ();
@@ -57,8 +57,11 @@ namespace Completed
 		{
 			//If it's not the player's turn, exit the function.
 			if(!GameManager.instance.playersTurn) return;
-			
-			int horizontal = 0;  	//Used to store the horizontal move direction.
+
+            //If it's the player's and we already moving exit
+            if (GameManager.instance.playersTurn && isMoving) return;
+			 
+            int horizontal = 0;  	//Used to store the horizontal move direction.
 			int vertical = 0;		//Used to store the vertical move direction.
 			
 			//Check if we are running either in the Unity editor or in a standalone build.
@@ -134,7 +137,7 @@ namespace Completed
 			food--;
 			
 			//Update food text display to reflect current score.
-			foodText.text = "Food: " + food;
+			foodText.text = "Mister Spock's Energy: " + food;
 			
 			//Call the AttemptMove method of the base class, passing in the component T (in this case Wall) and x and y direction to move.
 			base.AttemptMove <T> (xDir, yDir);
@@ -148,12 +151,14 @@ namespace Completed
 				//Call RandomizeSfx of SoundManager to play the move sound, passing in two audio clips to choose from.
 				SoundManager.instance.RandomizeSfx (moveSound1, moveSound2);
 			}
+			else
+			{
+                //Set the playersTurn boolean of GameManager to false now that players turn is over.
+                GameManager.instance.playersTurn = false;
+            }
 			
 			//Since the player has moved and lost food points, check if the game has ended.
-			CheckIfGameOver ();
-			
-			//Set the playersTurn boolean of GameManager to false now that players turn is over.
-			GameManager.instance.playersTurn = false;
+			CheckIfGameOver (); 
 		}
 		
 		
@@ -192,7 +197,7 @@ namespace Completed
 				food += pointsPerFood;
 				
 				//Update foodText to represent current total and notify player that they gained points
-				foodText.text = "+" + pointsPerFood + " Food: " + food;
+				foodText.text = "+" + pointsPerFood + " Mister Spock's Energy: " + food;
 				
 				//Call the RandomizeSfx function of SoundManager and pass in two eating sounds to choose between to play the eating sound effect.
 				SoundManager.instance.RandomizeSfx (eatSound1, eatSound2);
@@ -208,7 +213,7 @@ namespace Completed
 				food += pointsPerSoda;
 				
 				//Update foodText to represent current total and notify player that they gained points
-				foodText.text = "+" + pointsPerSoda + " Food: " + food;
+				foodText.text = "+" + pointsPerSoda + " Mister Spock's Energy: " + food;
 				
 				//Call the RandomizeSfx function of SoundManager and pass in two drinking sounds to choose between to play the drinking sound effect.
 				SoundManager.instance.RandomizeSfx (drinkSound1, drinkSound2);
@@ -239,7 +244,7 @@ namespace Completed
 			food -= loss;
 			
 			//Update the food display with the new total.
-			foodText.text = "-"+ loss + " Food: " + food;
+			foodText.text = "-"+ loss + " Mister Spock's Energy: " + food;
 			
 			//Check to see if game has ended.
 			CheckIfGameOver ();
@@ -262,6 +267,12 @@ namespace Completed
 				GameManager.instance.GameOver ();
 			}
 		}
-	}
+
+        protected override void FinishMoving()
+        {
+			GameManager.instance.playersTurn = false;
+            return;
+        }
+    }
 }
 

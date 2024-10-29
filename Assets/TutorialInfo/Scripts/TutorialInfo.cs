@@ -61,12 +61,12 @@ public class TutorialInfo : MonoBehaviour
 		}
 	}
 
-	// show overlay info, pausing game time, disabling the audio listener 
+	// show overlay info, pausing game time 
 	// and enabling the overlay info parent game object
 	public void ShowLaunchScreen()
 	{
 		Time.timeScale = 0f;
-		mainListener.enabled = false;
+		mainListener.enabled = true;
 		overlay.SetActive (true);
 	}
 

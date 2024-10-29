@@ -35,26 +35,39 @@ namespace Completed
 		public GameObject[] wallTiles;									//Array of wall prefabs.
 		public GameObject[] foodTiles;									//Array of food prefabs.
 		public GameObject[] enemyTiles;									//Array of enemy prefabs.
-		public GameObject[] outerWallTiles;								//Array of outer tile prefabs.
-		
-		private Transform boardHolder;									//A variable to store a reference to the transform of our Board object.
-		private List <Vector3> gridPositions = new List <Vector3> ();	//A list of possible locations to place tiles.
-		
-		
-		//Clears our list gridPositions and prepares it to generate a new board.
-		void InitialiseList ()
+		public GameObject[] outerWallTiles;                             //Array of outer tile prefabs.
+
+        public LevelParameters[] levelParameters;                       //Array of parameters for level setups
+
+
+        private Transform boardHolder;									//A variable to store a reference to the transform of our Board object.
+		private List <Vector3> gridPositions = new List <Vector3> ();   //A list of possible locations to place tiles.
+		 
+        //Clears our list gridPositions and prepares it to generate a new board.
+        void InitialiseList ()
 		{
 			//Clear our list gridPositions.
 			gridPositions.Clear ();
 			
 			//Loop through x axis (columns).
-			for(int x = 1; x < columns-1; x++)
+			for(int x = 0; x < columns; x++)
 			{
 				//Within each column, loop through y axis (rows).
-				for(int y = 1; y < rows-1; y++)
+				for(int y = 0; y < rows; y++)
 				{
-					//At each index add a new Vector3 to our list with the x and y coordinates of that position.
-					gridPositions.Add (new Vector3(x, y, 0f));
+					//At each index add a new Vector3 to our list with the x and y coordinates of that position. 
+					if (x == 0 && y == 0)
+					{
+						//ignore player start
+					}
+					else if (x == columns - 1 && y == rows - 1)
+					{
+                        //ignore exit
+                    }
+                    else
+					{ 
+                        gridPositions.Add(new Vector3(x, y, 0f));
+                    }
 				}
 			}
 		}
@@ -129,28 +142,38 @@ namespace Completed
 		
 		
 		//SetupScene initializes our level and calls the previous functions to lay out the game board
-		public void SetupScene (int level)
+		public string SetupScene (int level)
 		{
-			//Creates the outer walls and floor.
-			BoardSetup ();
+			if (level >= levelParameters.Length)
+			{
+                GameManager.instance.GameOver();
+				return "You Won!";
+            }
+
+			LevelParameters levelParameter = levelParameters[level]; 
+			 
+            //Creates the outer walls and floor.
+            BoardSetup ();
 			
 			//Reset our list of gridpositions.
 			InitialiseList ();
 			
 			//Instantiate a random number of wall tiles based on minimum and maximum, at randomized positions.
-			LayoutObjectAtRandom (wallTiles, wallCount.minimum, wallCount.maximum);
+			LayoutObjectAtRandom (wallTiles, levelParameter.numberOfWalls.minimum, levelParameter.numberOfWalls.maximum);
 			
 			//Instantiate a random number of food tiles based on minimum and maximum, at randomized positions.
-			LayoutObjectAtRandom (foodTiles, foodCount.minimum, foodCount.maximum);
+			LayoutObjectAtRandom (foodTiles, levelParameter.numberOfPickups.minimum, levelParameter.numberOfPickups.maximum);
 			
 			//Determine number of enemies based on current level number, based on a logarithmic progression
-			int enemyCount = (int)Mathf.Log(level, 2f);
+			//int enemyCount = (int)Mathf.Log(level, 2f);
 			
 			//Instantiate a random number of enemies based on minimum and maximum, at randomized positions.
-			LayoutObjectAtRandom (enemyTiles, enemyCount, enemyCount);
+			LayoutObjectAtRandom (enemyTiles, levelParameter.numberOfEnemies.minimum, levelParameter.numberOfEnemies.maximum);
 			
 			//Instantiate the exit tile in the upper right hand corner of our game board
 			Instantiate (exit, new Vector3 (columns - 1, rows - 1, 0f), Quaternion.identity);
-		}
+
+			return levelParameter.levelName; 
+        }
 	}
 }

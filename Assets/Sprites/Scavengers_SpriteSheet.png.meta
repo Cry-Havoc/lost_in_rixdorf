@@ -282,11 +282,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
-        width: 32
-        height: 32
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,12 +302,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
-        width: 32
-        height: 32
+        x: 512
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,12 +323,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
-        width: 32
-        height: 32
+        x: 1024
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,12 +344,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
-        width: 32
-        height: 32
+        x: 1536
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 192
-        width: 32
-        height: 32
+        x: 2048
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -386,12 +386,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 192
-        width: 32
-        height: 32
+        x: 2560
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -407,12 +407,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 32
-        height: 32
+        x: 3072
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -428,12 +428,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 224
-        y: 192
-        width: 32
-        height: 32
+        x: 3584
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -450,11 +450,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 32
-        height: 32
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -470,12 +470,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
-        width: 32
-        height: 32
+        x: 512
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -491,12 +491,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 160
-        width: 32
-        height: 32
+        x: 1024
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -512,12 +512,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 96
-        y: 160
-        width: 32
-        height: 32
+        x: 1536
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -533,12 +533,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_12
       rect:
         serializedVersion: 2
-        x: 128
-        y: 160
-        width: 32
-        height: 32
+        x: 2048
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -554,12 +554,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
-        width: 32
-        height: 32
+        x: 2560
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,12 +575,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 192
-        y: 160
-        width: 32
-        height: 32
+        x: 3072
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -596,12 +596,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_15
       rect:
         serializedVersion: 2
-        x: 224
-        y: 160
-        width: 32
-        height: 32
+        x: 3584
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -618,11 +618,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 32
-        height: 32
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,12 +638,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_17
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
+        x: 512
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -659,12 +659,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_18
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
+        x: 1024
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -680,12 +680,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_19
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
+        x: 1536
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -701,12 +701,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_20
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
+        x: 2048
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -722,12 +722,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_21
       rect:
         serializedVersion: 2
-        x: 160
-        y: 128
-        width: 32
-        height: 32
+        x: 2560
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -743,12 +743,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_22
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
-        width: 32
-        height: 32
+        x: 3072
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -764,12 +764,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_23
       rect:
         serializedVersion: 2
-        x: 224
-        y: 128
-        width: 32
-        height: 32
+        x: 3584
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -786,11 +786,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
-        height: 32
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -806,12 +806,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_25
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -827,12 +827,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_26
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -848,12 +848,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_27
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -869,12 +869,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_28
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -890,12 +890,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_29
       rect:
         serializedVersion: 2
-        x: 160
-        y: 96
-        width: 32
-        height: 32
+        x: 2560
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -911,12 +911,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_30
       rect:
         serializedVersion: 2
-        x: 192
-        y: 96
-        width: 32
-        height: 32
+        x: 3072
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -932,12 +932,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_31
       rect:
         serializedVersion: 2
-        x: 224
-        y: 96
-        width: 32
-        height: 32
+        x: 3584
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -954,11 +954,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 32
-        height: 32
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -974,12 +974,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_33
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -995,12 +995,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_34
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1016,12 +1016,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_35
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1037,12 +1037,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_36
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 32
-        height: 32
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1058,12 +1058,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_37
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
-        width: 32
-        height: 32
+        x: 2560
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1079,12 +1079,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_38
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
-        width: 32
-        height: 32
+        x: 3072
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1100,12 +1100,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_39
       rect:
         serializedVersion: 2
-        x: 224
-        y: 64
-        width: 32
-        height: 32
+        x: 3584
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1122,11 +1122,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1142,12 +1142,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_41
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1163,12 +1163,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_42
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1184,12 +1184,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_43
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1205,12 +1205,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_44
       rect:
         serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
+        x: 2048
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1226,12 +1226,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_45
       rect:
         serializedVersion: 2
-        x: 160
-        y: 32
-        width: 32
-        height: 32
+        x: 2560
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1247,12 +1247,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_46
       rect:
         serializedVersion: 2
-        x: 192
-        y: 32
-        width: 32
-        height: 32
+        x: 3072
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1268,12 +1268,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_47
       rect:
         serializedVersion: 2
-        x: 224
-        y: 32
-        width: 32
-        height: 32
+        x: 3584
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1290,11 +1290,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
-        height: 32
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1310,12 +1310,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_49
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1331,12 +1331,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_50
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1352,12 +1352,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_51
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1373,12 +1373,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_52
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1394,12 +1394,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_53
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
+        x: 2560
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1415,12 +1415,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_54
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
+        x: 3072
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1436,12 +1436,12 @@ TextureImporter:
       name: Scavengers_SpriteSheet_55
       rect:
         serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
+        x: 3584
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1453,10 +1453,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Scavengers_SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 514
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541f7757f93b64a4399fee77a29c5ccd
+      internalID: 1380120891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 652c638ea3af09341987d6da9a7ff609
     internalID: 0
     vertices: []
     indices: 
@@ -1516,6 +1537,7 @@ TextureImporter:
       Scavengers_SpriteSheet_53: 21300106
       Scavengers_SpriteSheet_54: 21300108
       Scavengers_SpriteSheet_55: 21300110
+      Scavengers_SpriteSheet_56: 1380120891
       Scavengers_SpriteSheet_6: 21300012
       Scavengers_SpriteSheet_7: 21300014
       Scavengers_SpriteSheet_8: 21300016

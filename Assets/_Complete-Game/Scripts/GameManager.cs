@@ -13,13 +13,13 @@ namespace Completed
 		public float turnDelay = 0.1f;							//Delay between each Player turn.
 		public int playerFoodPoints = 100;						//Starting value for Player food points.
 		public static GameManager instance = null;				//Static instance of GameManager which allows it to be accessed by any other script.
-		[HideInInspector] public bool playersTurn = true;		//Boolean to check if it's players turn, hidden in inspector but public.
+		public bool playersTurn = true;		//Boolean to check if it's players turn, hidden in inspector but public.
 		
 		
 		private Text levelText;									//Text to display current level number.
 		private GameObject levelImage;							//Image to block out level as levels are being set up, background for levelText.
 		private BoardManager boardScript;						//Store a reference to our BoardManager which will set up the level.
-		private int level = 1;									//Current level number, expressed in game as "Day 1".
+		private int level = 0;									//Current level number, expressed in game as "Day 1".
 		private List<Enemy> enemies;							//List of all Enemy units, used to issue them move commands.
 		private bool enemiesMoving;								//Boolean to check if enemies are moving.
 		private bool doingSetup = true;							//Boolean to check if we're setting up board, prevent Player from moving during setup.
@@ -82,10 +82,7 @@ namespace Completed
 			
 			//Get a reference to our text LevelText's text component by finding it by name and calling GetComponent.
 			levelText = GameObject.Find("LevelText").GetComponent<Text>();
-			
-			//Set the text of levelText to the string "Day" and append the current level number.
-			levelText.text = "Day " + level;
-			
+			 
 			//Set levelImage to active blocking player's view of the game board during setup.
 			levelImage.SetActive(true);
 			
@@ -94,9 +91,10 @@ namespace Completed
 			
 			//Clear any Enemy objects in our List to prepare for next level.
 			enemies.Clear();
-			
-			//Call the SetupScene function of the BoardManager script, pass it current level number.
-			boardScript.SetupScene(level);
+
+            //Call the SetupScene function of the BoardManager script, pass it current level number. 
+			//Use the level name from the level paramters
+            levelText.text = boardScript.SetupScene(level);
 			
 		}
 		
@@ -116,9 +114,10 @@ namespace Completed
 		{
 			//Check that playersTurn or enemiesMoving or doingSetup are not currently true.
 			if(playersTurn || enemiesMoving || doingSetup)
-				
-				//If any of these are true, return and do not start MoveEnemies.
-				return;
+			{ 
+                //If any of these are true, return and do not start MoveEnemies.
+                return;
+            }	
 			
 			//Start moving enemies.
 			StartCoroutine (MoveEnemies ());
@@ -136,7 +135,7 @@ namespace Completed
 		public void GameOver()
 		{
 			//Set levelText to display number of levels passed and game over message
-			levelText.text = "After " + level + " days, you starved.";
+			levelText.text = "Mister Spock is now scared and hungry!\nYou made the dog sad.";
 			
 			//Enable black background image gameObject.
 			levelImage.SetActive(true);
@@ -144,9 +143,21 @@ namespace Completed
 			//Disable this GameManager.
 			enabled = false;
 		}
-		
-		//Coroutine to move enemies in sequence.
-		IEnumerator MoveEnemies()
+
+        public void GameOver_Win()
+        {
+            //Set levelText to display number of levels passed and game over message
+            levelText.text = "Mister Spock found his way home!";
+
+            //Enable black background image gameObject.
+            levelImage.SetActive(true);
+
+            //Disable this GameManager.
+            enabled = false;
+        }
+
+        //Coroutine to move enemies in sequence.
+        IEnumerator MoveEnemies()
 		{
 			//While enemiesMoving is true player is unable to move.
 			enemiesMoving = true;
@@ -168,7 +179,7 @@ namespace Completed
 				enemies[i].MoveEnemy ();
 				
 				//Wait for Enemy's moveTime before moving next Enemy, 
-				yield return new WaitForSeconds(enemies[i].moveTime);
+				yield return new WaitForSeconds(enemies[i].moveTime * 2);
 			}
 			//Once Enemies are done moving, set playersTurn to true so player can move.
 			playersTurn = true;

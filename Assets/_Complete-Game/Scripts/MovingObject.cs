@@ -13,7 +13,7 @@ namespace Completed
 		private BoxCollider2D boxCollider; 		//The BoxCollider2D component attached to this object.
 		private Rigidbody2D rb2D;				//The Rigidbody2D component attached to this object.
 		private float inverseMoveTime;			//Used to make movement more efficient.
-		private bool isMoving;					//Is the object currently moving.
+		protected bool isMoving;					//Is the object currently moving.
 		
 		
 		//Protected, virtual functions can be overridden by inheriting classes.
@@ -95,6 +95,8 @@ namespace Completed
 			
 			//The object is no longer moving.
 			isMoving = false;
+
+			FinishMoving();
 		}
 		
 		
@@ -123,11 +125,15 @@ namespace Completed
 				//Call the OnCantMove function and pass it hitComponent as a parameter.
 				OnCantMove (hitComponent);
 		}
-		
-		
+		 
 		//The abstract modifier indicates that the thing being modified has a missing or incomplete implementation.
 		//OnCantMove will be overriden by functions in the inheriting classes.
 		protected abstract void OnCantMove <T> (T component)
 			where T : Component;
-	}
+
+		protected virtual void FinishMoving()
+		{
+			return;
+		}
+    }
 }
